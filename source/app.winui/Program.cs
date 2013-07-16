@@ -21,9 +21,10 @@ namespace app.winui
       var browser = new DirectoryBrowser(view.textBox1, view.treeView1,node_factory);
       var action = new StateAwareAction(browser);
 
-      new ExpandableDirectoryBrowsingNode(view.treeView1, node_factory,
-                                                                       new StubData(),
-                                                                       UI.node_requires_reload);
+        new ExpandableDirectoryBrowsingNode(view.treeView1, node_factory,
+                                            new GetDirectoryData(new FileSystemInfoProvider()),
+                                            UI.node_requires_reload);
+
       new ClickTriggeredAction(action, view.button1);
       new ClickTriggeredAction(action, view.button2);
 

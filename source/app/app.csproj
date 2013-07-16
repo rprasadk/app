@@ -107,11 +107,14 @@
     <Compile Include="windows\DummyNode.cs" />
     <Compile Include="windows\EventArgs.cs" />
     <Compile Include="windows\ExpandableDirectoryBrowsingNode.cs" />
+    <Compile Include="windows\FileSystemInfoProvider.cs" />
+    <Compile Include="windows\GetDirectoryData.cs" />
     <Compile Include="windows\ICreateNodes.cs" />
     <Compile Include="windows\IDetermineIfANodeNeedsToBeReloaded.cs" />
     <Compile Include="windows\IDirectoryFind.cs" />
     <Compile Include="windows\DirectoryBrowser.cs" />
     <Compile Include="windows\IDirectoryBrowser.cs" />
+    <Compile Include="windows\IDirectoryInfoProvider.cs" />
     <Compile Include="windows\IDisplayDirectoryHierarchies.cs" />
     <Compile Include="windows\IGetData.cs" />
     <Compile Include="windows\UI.cs" />
